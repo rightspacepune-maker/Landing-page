@@ -1,0 +1,38 @@
+@layer base {
+  * {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    line-height: 1.5;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  button {
+    background-color: transparent;
+    background-image: none;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1280px;
+  }
+}
