@@ -42,7 +42,12 @@ const webpackConfig = {
       },
     },
   },
-  webpack: {
+  style: {
+  postcss: {
+    plugins: [require('tailwindcss'), require('autoprefixer')],
+  },
+},
+webpack: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
