@@ -44,9 +44,13 @@ const webpackConfig = {
   },
   style: {
   postcss: {
-    plugins: [require('tailwindcss'), require('autoprefixer')],
+    plugins: [
+      require("tailwindcss"),
+      require("autoprefixer"),
+    ],
   },
 },
+
 webpack: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
